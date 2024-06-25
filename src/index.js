@@ -14,6 +14,7 @@ const routes = {
   "k8s.swai.top": "https://registry.k8s.io",
   "ghcr.swai.top": "https://ghcr.io",
   "cloudsmith.swai.top": "https://docker.cloudsmith.io",
+  "ecr.swai.top": "https://public.ecr.aws",
 
   // staging
   "docker-staging.swai.top": dockerHub,
