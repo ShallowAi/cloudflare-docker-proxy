@@ -16,13 +16,21 @@
 
 ## Usage
 
-```
-  docker.swai.top
-  quay.swai.top "https://quay.io",
-  gcr.swai.top "https://gcr.io",
-  k8s-gcr.swai.top "https://k8s.gcr.io",
-  k8s.swai.top "https://registry.k8s.io",
-  ghcr.swai.top "https://ghcr.io",
-  cloudsmith.swai.top "https://docker.cloudsmith.io",
-  ecr.swai.top https://public.ecr.aws
+```shell
+# docker pull hello-world:latest
+docker pull docker.swai.top/hello-world:latest
+# docker pull quay.io/kubernetes-ingress-controller/nginx-ingress-controller:latest
+docker pull quay.swai.top/kubernetes-ingress-controller/nginx-ingress-controller:latest
+# docker pull gcr.io/distroless:latest
+docker pull gcr.swai.top/distroless
+# docker pull k8s.gcr.io/sig-storage/csi-provisioner:latest
+docker pull k8s-gcr.swai.top/sig-storage/csi-provisioner:latest
+# docker pull registry.k8s.io/pause:latest
+docker pull k8s.swai.top/pause:latest
+# docker pull ghcr.io/shallowai/php-fpm:main
+docker pull ghcr.swai.top/shallowai/php-fpm:main
+# docker pull docker.cloudsmith.io/OWNER/REGISTRY/IMAGE_NAME:TAG
+docker pull cloudsmith.swai.top/OWNER/REGISTRY/IMAGE_NAME:TAG
+# docker pull public.ecr.aws/docker/library/alpine:latest
+docker pull ecr.swai.top/docker/library/alpine:latest
 ```
